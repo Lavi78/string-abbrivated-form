@@ -1,0 +1,27 @@
+using System.Text;
+using system;
+
+namespace system
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            string str = "vijay kumar sharma";
+            string[] strArr = str.Split(" ");
+            StringBuilder sb = new StringBuilder();
+            
+            for (int i = 0; i < strArr.Length-1; i++)
+                
+            {
+                sb.Append(strArr[i].Substring(0,1).ToUpper());
+                sb.Append(".");
+            }
+            sb.Append(strArr[strArr.Length - 1]);
+            
+            Console.WriteLine(sb);
+            Console.ReadLine();
+
+        }
+    }
+}
